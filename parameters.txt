@@ -1,0 +1,36 @@
+# 这是一个参数文件
+
+
+# 允许从图像中提取的最大特征数量
+maxFeatures = 500 
+
+
+# 相机内参
+camera.cx=685.95;
+camera.cy=467.55;
+camera.fx=2425.8;
+camera.fy=2415.1;
+
+# 天花板高度
+ceiling_height = 2800;
+
+# 最小匹配数量
+min_good_match=10
+
+# 检验H矩阵分解的可行解时在相机前面的特征点的最小比例
+prop_feasible_points = 0.1
+
+# 最小内点
+min_inliers=5
+# 最大运动误差
+max_norm=0.3
+
+# 成为关键帧的最小距离
+keyframe_threshold=0.1
+# 闭环检测的最大距离
+max_norm_lp=5.0
+
+# Loop closure
+lastFramesNum = 6;
+#check_loop_closure=yes
+#nearby_loops=5

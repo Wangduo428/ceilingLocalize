@@ -1,0 +1,18 @@
+# ADD_LIBRARY(jhcap jhcap.cpp jhusb.cpp bmpfile.c) #compile camera lib
+# TARGET_LINK_LIBRARIES(jhcap usb-1.0) #linking libusb
+
+ADD_LIBRARY(voBase voBase.cpp)
+TARGET_LINK_LIBRARIES(voBase ${OpenCV_LIBS})
+
+ADD_EXECUTABLE(testcode testcode.cpp)
+TARGET_LINK_LIBRARIES(testcode ${OpenCV_LIBS} voBase)
+
+# # 添加g2o的依赖
+# # 因为g2o不是常用库，要添加它的findg2o.cmake文件
+# LIST( APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules )
+# SET( G2O_ROOT /usr/local/include/g2o )
+# FIND_PACKAGE( G2O )
+# # CSparse
+# FIND_PACKAGE( CSparse )
+# INCLUDE_DIRECTORIES( ${G2O_INCLUDE_DIR} ${CSPARSE_INCLUDE_DIR} )
+

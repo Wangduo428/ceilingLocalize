@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../lib/libvoBase.a  CMakeFiles/voBase.dir/src/voBase.cpp.o
+/usr/bin/ranlib ../lib/libvoBase.a

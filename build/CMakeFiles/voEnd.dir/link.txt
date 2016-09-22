@@ -1,0 +1,2 @@
+/usr/bin/ar cr ../lib/libvoEnd.a  CMakeFiles/voEnd.dir/src/voEnd.cpp.o
+/usr/bin/ranlib ../lib/libvoEnd.a
